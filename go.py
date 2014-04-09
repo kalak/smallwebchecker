@@ -1,9 +1,11 @@
 #! /usr/bin/python
 
-import getopt, sys
+import getopt, sys, urllib
 
 def usage():
-  print "\nsmallwebchecker\n"
+  print '\nsmallwebchecker\n'
+  print 'Performs small web checks such as robots, headers, and'
+  print	'common CMS info to build information about web server.'
   print 'Usage: '+sys.argv[0]+' -u <url> [options]'
   print '	(Required)'
   print '	-u [url or IP address] : url to scan'
@@ -25,8 +27,11 @@ def main(argv):
     if opt in ('-h', '--help'):
       usage()
       sys.exit(2)
+    elif opt in ('-u', '--url')
+      
 
   # Start stuff for real
+  print urllib.urlopen()
 
 if __name__ =='__main__':
     main(sys.argv[1:])
